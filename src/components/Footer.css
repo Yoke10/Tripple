@@ -1,0 +1,104 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #003135; /* Updated color to match design */
+  color: #ffffff;
+  padding: 20px; /* Consistent padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px; /* Consistent margins */
+  min-width: 180px; /* Adjusted minimum width for better layout */
+}
+
+.footer-title {
+  font-size: 1.2em; /* Slightly reduced font-size */
+  margin-bottom: 15px; /* Increased margin-bottom */
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-description {
+  font-size: 0.9em; /* Slightly reduced font-size */
+  line-height: 1.6; /* Increased line-height for readability */
+  color: #dddddd;
+}
+
+.contact-info {
+  font-size: 0.9em; /* Slightly reduced font-size */
+  color: #dddddd;
+}
+
+.contact-icon {
+  margin-right: 8px;
+  color: #3498db; /* Consistent icon color */
+}
+
+.quick-links {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-link {
+  color: #dddddd;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px; /* Slightly increased margin-bottom */
+  transition: color 0.3s;
+}
+
+.quick-link:hover {
+  color: #3498db; /* Highlight color on hover */
+}
+
+.social-links {
+  display: flex;
+  gap: 15px; /* Increased gap for better spacing */
+}
+
+.social-link {
+  color: #ffffff;
+  font-size: 1.5em; /* Slightly increased font-size */
+}
+
+.footer-copy {
+  font-size: 0.8em; /* Slightly reduced font-size */
+  text-align: center;
+  color: #dddddd;
+  margin-top: 20px; /* Increased margin-top for spacing */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}

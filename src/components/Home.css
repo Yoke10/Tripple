@@ -1,0 +1,572 @@
+/* General Styles */
+body {
+    background-color: #f5f5f5; /* Light grey background for contrast */
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Modern, readable font */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    color: #333; /* Dark grey text for readability */
+}
+
+a {
+    text-decoration: none; /* Remove default underline from links */
+    color: inherit; /* Inherit color from parent element */
+}
+
+/* Header */
+.home-header {
+    background-image: url('./images/luca-bravo-O453M2Liufs-unsplash.jpg');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    color: white;
+    padding: 0; /* Remove padding for full height coverage */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%; /* Full width of the viewport */
+    height: 90vh; /* Full viewport height */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+.h1title {
+    text-align: center;
+    margin: 20px; /* Adjust margin as needed */
+}
+
+.h1title h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 40px; /* Adjust font size as needed */
+}
+
+.h1title h1 {
+    margin: 10px 0; /* Adjust margin as needed */
+    font-size: 200px; /* Set font size to 200px */
+    color: #0FA4AF; /* Initial color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition for color and transform */
+}
+
+.h1title h1:hover {
+    color: #eed147; /* Change color on hover */
+    transform: scale(1.5); /* Slightly increase size on hover */
+}
+
+.h1title p {
+    margin: 10px 0; /* Adjust margin as needed */
+    font-size: 40px; /* Adjust font size as needed */
+}
+
+.slogan {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+/* Popup Form */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 30px;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.form-wrp {
+    display: grid;
+    gap: 15px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    background: #0FA4AF;
+    float: left;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s linear;
+}
+
+.submit-btn:hover {
+    background: #f5a623;
+}
+
+.form-hed {
+    color: #0FA4AF;
+}
+
+.form-div input {
+    border: none !important;
+    border-radius: 0px !important;
+    border-bottom: 2px solid #2596be !important;
+    background: #f3f3f3;
+    box-shadow: none !important; 
+    outline: none !important; 
+}
+
+.popup-content h2 {
+    margin: 0px 0px 15px 0px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* About Us Section */
+.about-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 4em 2em;
+    margin: 6em auto 3em auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 1200px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.about-us-content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.about-us-image-container {
+    flex: 1;
+    max-width: 45%; /* Adjust image width for more space */
+    display: flex;
+    justify-content: center; /* Center image */
+}
+
+.about-us-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.about-us-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.about-us-text {
+    flex: 1;
+    text-align: left;
+    max-width: 50%;
+}
+
+.about-us-text h2 {
+    font-size: 2.5em;
+    color: #2596be;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    position: relative; /* Position for underline */
+}
+
+.about-us-text h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #2596be;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.about-us-text p {
+    font-size: 1.2em;
+    color: #2596be;
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+}
+
+.about-us-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-bottom: 1.5em;
+}
+
+.about-us-stats div {
+    text-align: center;
+    flex: 1;
+    min-width: 120px; /* Ensure stats have a minimum width */
+}
+
+.about-us-stats h3 {
+    font-size: 1.8em;
+    color: #2596be;
+    margin: 0;
+}
+
+.about-us-stats p {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
+
+.know-more-link {
+    padding: 0.8em 1.5em;
+    background-color: #2596be;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: start;
+    display: inline-block;
+}
+
+.know-more-link:hover {
+    background-color: #165b75;
+}
+
+.know-more-link:active {
+    transform: translateY(2px);
+}
+
+/* Trips Section */
+.trips-section {
+    background-color: #fafafa; /* Light grey background for contrast */
+    padding: 4em 2em;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the section */
+}
+
+.trips-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.trips-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #0FA4AF;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.trips-cards {
+    display: flex; /* Use flexbox for alignment */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 2em; /* Increase gap between cards */
+    justify-content: center; /* Center align the cards */
+    padding: 1em;
+    max-width: 100%; /* Adjust max width */
+    margin: 0 auto; /* Center align the grid */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+}
+
+.trip-card {
+    background-color: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px; /* Adjust max width for larger cards */
+    text-align: left; /* Left align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition for hover effects */
+}
+
+.trip-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px; /* Fixed height for images */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Add transition for image scaling */
+}
+
+.trip-card:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.trip-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0.5em 0;
+}
+
+.trip-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
+
+/* Organizers Section */
+.organizers-section {
+    background-color: #fff;
+    padding: 4em 2em;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.organizers-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.organizers-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #0FA4AF;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.organizers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.organizer-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    text-align: center;
+    max-width: 200px;
+    padding: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.organizer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.organizer-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.organizer-card:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.organizer-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0.5em 0;
+}
+
+.organizer-card p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0.5em 0;
+    line-height: 1.4;
+}
+
+
+/* Contact Us Section */
+.contact-us-section {
+    background-color: #fff;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.contact-us-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.contact-us-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #0FA4AF;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-us-form {
+    display: grid;
+    gap: 1em;
+}
+
+.contact-us-form input,
+.contact-us-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.contact-us-form input[type="submit"] {
+    background-color: #0FA4AF;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us-form input[type="submit"]:hover {
+    background-color: #0FA4AF;
+}
+
+.social-media-links {
+    margin-top: 2em;
+}
+
+.social-media-links a {
+    font-size: 2em;
+    color: #0FA4AF;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #0FA4AF;
+}
+.make-trip-section {
+    margin-top: 80px;
+    text-align: center; /* Center text within the section */
+}
+
+.make-trip-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.make-trip-item {
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column;
+    text-align: center;
+}
+
+.make-trip-item .date {
+    border: 5px solid #165b75;
+    background: linear-gradient(to right bottom, #fff, #0FA4AF);
+    border-radius: 5px;
+    height: 100px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    padding: 0 25px;
+    color: black;
+    position: relative;
+}
+
+.make-trip-item .date-text {
+    margin: 5px;
+    font-weight: 700;
+}
+
+.make-trip-head {
+    margin-bottom: 50px;
+}
+
+.make-trip-head h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.make-trip-head h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #0FA4AF;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.make-trip-caption {
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+@media (max-width: 680px) {
+    .make-trip-item .date {
+        height: 80px;
+        font-size: 35px;
+        padding: 0 30px;
+    }
+    .make-trip-container {
+        gap: 20px;
+    }
+}

@@ -1,0 +1,117 @@
+:root {
+    /* Colors */
+    --color-primary: #0FA4AF;
+    --color-text: #545d7a;
+    --color-white: #fff;
+    --color-title: #003135; /* Updated color to match design */
+    --color-background: #f7f8fb;
+    --color-border: #dae1f5;
+
+    /* Fonts */
+    --font-family: "Satoshi", sans-serif;
+    --fs-sm: 1.4rem;
+    --fs-md: 1.6rem;
+    --fs-lg: 2.2rem;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    /* Transition & Box Shadow */
+    --transition: 0.4s ease-in-out;
+    --shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: var(--font-family);
+    color: var(--color-text);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-regular);
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+}
+
+.accordion__wrapper {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow);
+    border-radius: 8px; /* Slightly rounded corners */
+    width: 100%;
+    max-width: 60rem;
+    padding: 2rem;
+}
+
+.accordion__title {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    color: var(--color-title);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.accordion {
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 1.5rem;
+}
+
+.accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem 0;
+    transition: background-color 0.3s;
+}
+
+.accordion__header:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+}
+
+.accordion__icon {
+    background-color: var(--color-primary);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.accordion__icon.rotate {
+    transform: rotate(45deg); /* Rotate icon when open */
+}
+
+.accordion__question {
+    font-size: var(--fs-md);
+    font-weight: var(--fw-medium);
+    color: var(--color-title);
+}
+
+.accordion__answer {
+    padding: 1rem 0;
+    font-size: var(--fs-sm);
+}
+
+.accordion__content {
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}

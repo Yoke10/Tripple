@@ -1,0 +1,256 @@
+.about-us-page {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light background for the page */
+}
+
+.about-us-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 2em 0;
+  background-color: #003135; /* Dark teal background */
+  color: #ffffff; /* White text color */
+}
+
+.about-us-header h1 {
+  font-size: 3em;
+  color: white;
+}
+
+.about-us-header p {
+  font-size: 1.2em;
+  color: white;
+}
+
+.whatweare-section {
+  height: 350px;
+}
+
+.whatweare-section-inner {
+  background: url(./images/about.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.whatweare-section-inner::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.whatweare-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #ffffff; /* White text color */
+  text-align: center;
+}
+
+.whatweare-section-content h2 {
+  font-size: 2.5em;
+}
+
+.whatweare-section-content p {
+  width: 80%;
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.about-us-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background: linear-gradient(-45deg, #0FA4AF, #AFEED5); /* Gradient background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+
+.about-us-content {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.about-us-image-container {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-us-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.about-us-text h2 {
+  font-size: 2.5em;
+  color: #003135; /* Dark teal text color */
+}
+
+.about-us-text p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.know-more-link {
+  padding: 0.8em 1.5em;
+  background-color: #0FA4AF; /* Teal background */
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.know-more-link:hover {
+  background-color: #024950; /* Darker teal on hover */
+}
+
+.about-us-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.about-us-stats div {
+  text-align: center;
+  flex: 1;
+  max-width: 200px;
+}
+
+.about-us-stats h3 {
+  font-size: 2em;
+  color: #003135; /* Dark teal text color */
+  margin: 0;
+}
+
+.about-us-stats p {
+  font-size: 1em;
+  color: #555;
+  margin: 0;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.popup h2 {
+  margin-bottom: 1em;
+  color: #003135; /* Dark teal text color */
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.popup label {
+  font-weight: bold;
+  color: #333;
+}
+
+.popup input,
+.popup textarea {
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.popup input:focus,
+.popup textarea:focus {
+  border-color: #0FA4AF; /* Teal border color on focus */
+}
+
+.popup textarea {
+  resize: none;
+  height: 100px;
+}
+
+.popup button[type='submit'] {
+  padding: 0.8em 1.5em;
+  background-color: #0FA4AF; /* Teal background */
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.popup button[type='submit']:hover {
+  background-color: #024950; /* Darker teal on hover */
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.popup-close:hover {
+  color: #0FA4AF; /* Teal color on hover */
+}

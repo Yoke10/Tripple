@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Pacifico&family=Raleway:wght@300;400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css'); /* For Font Awesome icons */
+
+:root {
+  --primary-color: #0FA4AF; /* Accent Color */
+  --secondary-color: #024950; /* Secondary Color */
+  --text-color: #003135; /* Dark Color */
+  --bg-color: #AFEED5; /* Background Color */
+  --error-color: #964734; /* Error Color */
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.login-signup-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/pexels-hngstrm-1939485.jpg');
+  min-height: 100vh;
+  padding: 2em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.content-wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  animation: fadeInUp 1s ease-out, floatAnimation 3s ease-in-out infinite;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.tab {
+  padding: 0.8em 2em;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab:not(:last-child) {
+  margin-right: 1em;
+}  
+
+.tab:hover,
+.tab.active {
+  background: var(--secondary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-container {
+  animation: fadeIn 0.5s ease-out;
+  width: 80%;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1em;
+}
+
+.form-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-content input {
+  width: 100%;
+  padding: .5em;
+  margin-bottom: 1em;
+  border-radius: 9px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9em;
+}
+
+.form-content input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(15, 164, 175, 0.3);
+  transform: translateY(-2px);
+}
+
+.submit-btn {
+  padding: 1em;
+  border: none;
+  border-radius: 8px;
+  width: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.social-login {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-btn .logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.social-btn .logo i {
+  font-size: 1.2em; /* Adjust icon size */
+}
+
+.social-btn.google {
+  background-color: #ffffff;
+  color: var(--text-color);
+  border: 1px solid #dadce0;
+}
+
+.social-btn.facebook {
+  background-color: #0FA4AF;
+  color: white;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes floatAnimation {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 1.5em;
+  }
+
+  .company-title {
+    font-size: 2em;
+  }
+
+  .tab {
+    padding: 0.6em 1.5em;
+    font-size: 0.9em;
+  }
+
+  .form-content input,
+  .submit-btn,
+  .social-btn {
+    padding: 0.8em;
+    font-size: 0.9em;
+  }
+}

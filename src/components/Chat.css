@@ -1,0 +1,120 @@
+/* General container styling */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    box-sizing: border-box; /* Ensure full use of the viewport */
+  }
+  
+  /* Header styling */
+  .header {
+    padding: 10px;
+    background-color: #0FA4AF;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* User details in header */
+  .user-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info h5 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .user-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #cfcfcf;
+  }
+  
+  /* Chat body styling */
+  .body {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Message box styling */
+  .chat-box {
+    max-width: 70%;
+    margin: 5px 0; /* Margin between messages */
+    padding: 10px 15px; /* Padding to ensure text does not touch the edges */
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  /* User message (left aligned) */
+  .sender {
+    align-self: flex-start;
+    background-color: #90d7bb;
+    color: #fff;
+    border-radius: 10px 10px 10px 0;
+    
+  }
+  
+  /* Organizer message (right aligned) */
+  .receiver {
+    align-self: flex-end;
+    background-color: #AFDDE5;
+    color: #333;
+    border-radius: 10px 10px 0 10px;
+  }
+  
+  /* Timestamp styling */
+  .status {
+    font-size: 10px;
+    color: #888;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+  }
+  
+  /* Input container styling */
+  .input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Input field styling */
+  input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  /* Send button styling */
+  button {
+    padding: 10px 20px;
+    background-color: #0FA4AF;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #024950;
+    transform: scale(1.05);
+  }
+  

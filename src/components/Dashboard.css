@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Headings */
+h1, h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #003135;
+    text-align: center;
+}
+
+/* Table Styles */
+.bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bookings-table th, .bookings-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.bookings-table th {
+    background-color: #003135;
+    color: white;
+    font-weight: bold;
+}
+
+.bookings-table td {
+    background-color: #fff;
+    color: #333;
+}
+
+.bookings-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.bookings-table tr td button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bookings-table tr td button:hover {
+    opacity: 0.8;
+}
+
+.bookings-table tr td button:nth-child(1) {
+    background-color: #0FA4AF;
+}
+
+.bookings-table tr td button:nth-child(2) {
+    background-color: #dc3545;
+}
+
+/* Edit Form Styles */
+.edit-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="number"],
+.edit-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.edit-form input[type="text"]:focus,
+.edit-form input[type="number"]:focus,
+.edit-form input[type="email"]:focus {
+    border-color: #003135;
+}
+
+.edit-form button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0FA4AF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.edit-form button[type="submit"]:hover {
+    background-color: #003135;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .bookings-table th, .bookings-table td {
+        padding: 8px;
+    }
+
+    .edit-form {
+        padding: 15px;
+    }
+
+    .edit-form button[type="submit"] {
+        width: 100%;
+    }
+}

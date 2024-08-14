@@ -1,0 +1,13 @@
+package com.example.Trippleback;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface repo extends JpaRepository<entity, Integer> {
+    List<entity> findAll();
+    List<entity> findByEmailAndPassword(String email, String password);
+    List<entity> findByEmail(String email);
+}
